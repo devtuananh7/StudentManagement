@@ -18,6 +18,7 @@ public class Student {
 
     @Id
     @Column(name = "id_sv")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idSv;
 
     @Column(name = "university")
@@ -45,13 +46,13 @@ public class Student {
     private Integer course;
 
     @Column(name = "class")
-    private String className; // dùng tên khác để tránh từ khóa Java
+    private String className;
 
     @Column(name = "email")
     private String email;
 
     @Column(name = "phonge_number")
-    private Long phoneNumber; // đổi từ int sang Long để chứa số dài
+    private String phoneNumber;
 
     @Column(name = "status")
     private String status;
