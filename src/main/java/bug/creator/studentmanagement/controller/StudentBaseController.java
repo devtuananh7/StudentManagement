@@ -28,4 +28,10 @@ public class StudentBaseController {
     public Student getStudentByEmail(@PathVariable String email) {
         return studentService.getStudentByEmail(email);
     }
+
+    // Get by id
+    // Get by phone
+    // Delete by id
+    // Update by id
+    // Delete by email
 }
