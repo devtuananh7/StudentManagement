@@ -59,4 +59,10 @@ public class Student {
 
     @Column(name = "training_system")
     private String trainingSystem;
+
+    @Transient
+    private String code;
+
+    @Transient
+    private String message;
 }
